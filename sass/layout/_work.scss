@@ -24,8 +24,7 @@
 
     background-color: $img-overlay;
 
-    @include font(700, 14px, 1.4, 0.03);
-    color: $primary-white-color;
+    @include font(700, 14px, 1.4, 0.03, $primary-white-color);
     text-transform: uppercase;
 
     position: absolute;

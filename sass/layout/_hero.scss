@@ -13,8 +13,7 @@
   background-position: center;
 
   &__title {
-    color: $primary-white-color;
-    @include font(900, 44px, 1.36, 0.06em);
+    @include font(900, 44px, 1.36, 0.06em, $primary-white-color);
     text-align: center;
     text-transform: uppercase;
     margin-top: 0;

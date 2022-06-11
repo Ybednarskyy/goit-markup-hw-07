@@ -25,8 +25,7 @@
   }
 
   &__title {
-    @include font(700, 14px, 1.4, 0.03);
-    color: $title-text-color;
+    @include font(700, 14px, 1.4, 0.03, $title-text-color);
     text-transform: uppercase;
     margin-bottom: 10px;
   }

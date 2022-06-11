@@ -21,8 +21,6 @@
   display: flex;
   @extend %list;
 
-  @include font(500, 14px, 1.14, 0.02em);
-
   &__item:not(:last-child) {
     display: block;
     margin-right: 50px;
@@ -34,7 +32,7 @@
     @extend %link;
     @extend %header-link;
 
-    color: $title-text-color;
+    @include font(500, 14px, 1.14, 0.02em, $title-text-color);
     @include transition(color);
   }
 
@@ -77,8 +75,6 @@
   margin-left: auto;
   @extend %list;
 
-  @include font(500, 14px, 1.14, 0.02em);
-
   &__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -87,7 +83,7 @@
     @extend %link;
     @extend %header-link;
 
-    color: inherit;
+    @include font(500, 14px, 1.14, 0.02em, inherit);
     @include transition(color);
   }
 
@@ -99,9 +95,5 @@
   &__icon {
     fill: currentColor;
     margin-right: 10px;
-  }
-
-  &__link:hover {
-    color: $accent-color;
   }
 }
