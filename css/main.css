@@ -442,6 +442,15 @@ img {
 .address__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link--white {
+  color: #ffffff;
+}
+.address__link:hover, .address__link:focus {
+  color: #2196f3;
 }
 
 .join__title {
@@ -459,10 +468,59 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.subscribe {
+  display: flex;
+}
+
 .footer-form {
   display: block;
   margin-left: auto;
 }
 .footer-form__label {
   margin-right: 12px;
+}
+
+.footer-form__input {
+  background-color: transparent;
+  padding: 15px 16px;
+  width: 358px;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__input:hover, .footer-form__input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.submit-icon {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */

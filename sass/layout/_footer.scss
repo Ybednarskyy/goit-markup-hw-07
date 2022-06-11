@@ -36,6 +36,17 @@
     @extend %link;
     color: $address-item-color;
     font-style: normal;
+
+    @include transition(color);
+  }
+
+  &__link--white {
+    color: $primary-white-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
   }
 }
 
@@ -51,6 +62,10 @@
 
 .social__link--footer {
   background-color: $footer-social-bg-color;
+}
+
+.subscribe {
+  display: flex;
 }
 
 .footer-form {
@@ -69,13 +84,21 @@
   border: solid 1px $footer-input-border;
   border-radius: 4px;
 
-  @include font(400, 16px, 1.25, 0.3em, $primary-white-color);
+  @include font(400, 16px, 1.25, 0.03em, $primary-white-color);
 
-  @include transitiom(border-color);
+  @include transition(border-color);
+
+  &::placeholder {
+    @include font(400, 16px, 1.25, 0.03em, $address-item-color);
+  }
 
   &:hover,
   &:focus {
     outline: none;
     border-color: $accent-color;
   }
+}
+
+.submit-icon {
+  margin-left: 10px;
 }
