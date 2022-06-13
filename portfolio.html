@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -25,27 +25,27 @@
         <nav class="header__navigation">
           <!-- Логотип хедера -->
           <a href="index.html" class="logo logo--header" lang="en">
-            Web<span class="logo logo__header">Studio</span>
+            Web<span class="logo__header">Studio</span>
           </a>
           <!-- Навігація по сайту -->
-          <ul class="pagination list">
+          <ul class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link link" href="./index.html">Студия</a>
+              <a class="pagination__link" href="./index.html">Студия</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--current link" href="portfolio.html"
+              <a class="pagination__link pagination__link--current" href="portfolio.html"
                 >Портфолио</a
               >
             </li>
             <li class="pagination__item">
-              <a class="pagination__link link" href="">Контакты</a>
+              <a class="pagination__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <!-- Контакти хедера -->
-        <ul class="header-contacts list">
+        <ul class="header-contacts">
           <li class="header-contacts__item">
-            <a class="header-contacts__link link" href="mailto:info@devstudio.com">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons/sprite.svg#icon-envelope"></use>
               </svg>
@@ -304,11 +304,11 @@
       <div class="container">
         <div class="footer__box">
           <div class="address-box">
-            <a href="index.html" class="logo" lang="en">
+            <a href="index.html" class="logo footer--logo" lang="en">
               Web<span class="logo__footer">Studio</span>
             </a>
             <address class="address">
-              <ul class="address__list list">
+              <ul class="address__list">
                 <li class="address__item">
                   <a
                     class="address__link address__link--white link"
@@ -329,10 +329,10 @@
           </div>
           <div class="join">
             <p class="join__title">Присоединяйтесь</p>
-            <ul class="social social--join list">
+            <ul class="social social--join">
               <li class="social__item">
                 <a
-                  class="social__link link"
+                  class="social__link social__link--footer link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -345,7 +345,7 @@
               </li>
               <li class="social__item">
                 <a
-                  class="social__link link"
+                  class="social__link social__link--footer link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -358,7 +358,7 @@
               </li>
               <li class="social__item">
                 <a
-                  class="social__link link"
+                  class="social__link social__link--footer link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -371,7 +371,7 @@
               </li>
               <li class="social__item">
                 <a
-                  class="social__link link"
+                  class="social__link social__link--footer link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -387,8 +387,8 @@
           <form class="footer-form">
             <b class="join__title">Подпишитесь на рассылку</b>
             <div class="subscribe">
-              <label class="footer-form-mail">
-                <input name="email" type="email" class="footter-input" placeholder="E-mail" />
+              <label class="footer-form__label">
+                <input name="email" type="email" class="footer-form__input" placeholder="E-mail" />
               </label>
               <button type="submit" class="button">
                 Подписаться
