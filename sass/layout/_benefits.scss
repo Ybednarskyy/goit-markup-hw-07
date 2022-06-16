@@ -1,9 +1,7 @@
 .benefits {
-  &__list {
-    @extend %list;
-    display: flex;
-    gap: 30px;
-  }
+  @extend %list;
+  display: flex;
+  gap: 30px;
 
   &__item {
     flex-basis: calc(100% / 4);

@@ -1,9 +1,7 @@
 .customers {
-  &__list {
-    @extend %list;
-    display: flex;
-    gap: 30px;
-  }
+  @extend %list;
+  display: flex;
+  gap: 30px;
 
   &__item {
     flex-basis: calc(100% / 6);
@@ -29,15 +27,15 @@
   &:hover {
     border-color: $accent-color;
   }
-
-  &:hover .customers__icon,
-  &:focus .customers__icon {
-    fill: $accent-color;
-  }
 }
 
 .customers__icon {
   fill: $icons-color;
 
   @include transition(fill);
+
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: $accent-color;
+  }
 }

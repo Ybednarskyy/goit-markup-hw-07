@@ -1,11 +1,11 @@
-.work {
+.section--no-padding-top {
   padding-top: 0;
+}
 
-  &__list {
-    @extend %list;
-    display: flex;
-    gap: 30px;
-  }
+.work {
+  @extend %list;
+  display: flex;
+  gap: 30px;
 
   &__item {
     flex-basis: calc(100% / 3);

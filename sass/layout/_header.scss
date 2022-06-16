@@ -17,7 +17,7 @@
   display: flex;
 }
 
-.pagination {
+.site-nav {
   display: flex;
   @extend %list;
 
@@ -46,7 +46,7 @@
   }
 }
 
-.pagination__link::after {
+.site-nav__link::after {
   content: '';
   display: block;
   width: 100%;
@@ -61,12 +61,12 @@
   @include transition(transform);
 }
 
-.pagination__link:hover::after,
-.pagination__link:focus::after {
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
   transform: scaleX(1);
 }
 
-.pagination__link--current::after {
+.site-nav__link--current::after {
   transform: scaleX(1);
 }
 
